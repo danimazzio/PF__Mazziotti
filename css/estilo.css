@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  margin-right: 0px;
+}
+
+.container-fluid {
+  padding-right: 0px;
+}
+
+body {
+  background: #D9D9D9;
+  font-family: "M PLUS 1", sans-serif;
+}
+
+h1 {
+  color: #B87D4B;
+  font-family: "Bowlby One", cursive;
+  text-transform: uppercase;
+  font-size: 3.6rem;
+  letter-spacing: 0.5rem;
+}
+
+h2 {
+  color: #353535;
+  font-size: 2.2rem;
+  font-weight: lighter;
+  letter-spacing: 0.5rem;
+}
+
+h3 {
+  color: #284B63;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.navbar {
+  background-color: #284B63;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .navbar_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .navbar_fixed:not(.transparente):first-child {
+    background-color: rgba(40, 75, 99, 0.8);
+  }
+  .transparente nav {
+    background-color: rgba(40, 75, 99, 0.8);
+  }
+  .margen {
+    margin-top: 5rem;
+  }
+}
+.destacados {
+  background-image: url(../media/img/cocinas/cocina_servicio.jpg);
+  height: 30rem;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 95%;
+}
+
+.owl-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.item {
+  height: auto;
+  position: relative;
+  text-align: center;
+}
+.item p {
+  text-transform: uppercase;
+  background-color: #d9d9d9;
+  color: #353535;
+  width: 100%;
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  margin: 1rem auto;
+  font-size: 1.2rem;
+}
+.item img {
+  border-radius: 2rem;
+}
+
+.owl-prev,
+.owl-next {
+  background-color: #D9D9D9 !important;
+  width: 2.5rem !important;
+  border: 0.2rem solid #B87D4B !important;
+  color: #B87D4B !important;
+  border-radius: 50% !important;
+  position: absolute;
+  font-size: 24px !important;
+  top: 30%;
+  height: 2.5rem !important;
+  font-family: "Courier New", Courier, monospace !important;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+  background-color: #B87D4B !important;
+  color: #D9D9D9 !important;
+}
+
+.owl-next {
+  right: -20px;
+}
+
+.owl-prev {
+  left: -20px;
+}
+
+.servicios {
+  max-width: 90%;
+}
+
+.servicio__icono {
+  background-color: #284B63;
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(0deg);
+  transition: transform 0.7s ease-in-out;
+}
+.servicio__icono img {
+  width: 60%;
+}
+
+.servicio__icono:hover {
+  transform: rotate(-20deg);
+  transition: transform 0.7s ease-in-out;
+  cursor: pointer;
+}
+
+.servicio p {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #284B63;
+}
+
+.btn-primario {
+  background-color: #B87D4B;
+  color: #D9D9D9;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.asesoramos__texto {
+  border: 0.3rem solid #B87D4B;
+  border-radius: 1rem;
+  width: 75%;
+}
+.asesoramos__texto p {
+  display: inline-block;
+  align-items: center;
+  line-height: 1.5rem;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .asesoramos__texto p {
+    line-height: 3rem;
+  }
+}
+footer {
+  background-color: #353535;
+  color: #D9D9D9;
+}
+footer a {
+  color: #D9D9D9;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.derechos {
+  font-size: 0.8rem;
+}
+
+.btn-top {
+  background-color: #B87D4B;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  rotate: 270deg;
+  color: #D9D9D9;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  box-shadow: -1px -1px 5px 2px #353535;
+  cursor: pointer;
+}
+
+.serv {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.cardd__img {
+  width: 75vw;
+  max-width: 800px;
+  min-width: 320px;
+  margin: 0;
+  position: relative;
+}
+.cardd__img img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .cardd__texto {
+    position: absolute;
+    height: fit-content;
+    width: 20rem;
+    top: 40%;
+    left: -30%;
+    background-color: hsla(204, 60%, 39%, 0.8);
+    border-radius: 1rem;
+    color: #D9D9D9;
+    margin-left: 5rem;
+  }
+}
+.cardd__texto h4 {
+  text-transform: uppercase;
+}
+
+.nosotros__img img {
+  border-radius: 1.5rem;
+  box-shadow: 0px 0px 5px 0px;
+  display: block;
+  height: 30rem;
+}
+
+.nosotros p {
+  font-family: "M PLUS 1", sans-serif;
+  line-height: 2rem;
+  font-weight: 300;
+}
+
+form {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #D9D9D9;
+}
+
+@media (max-width: 768px) {
+  form {
+    max-width: 100%;
+  }
+}
+.formulario label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #353535;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.formulario__input {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #284B63;
+  padding: 10px;
+  font-size: 16px;
+  color: #353535;
+  background-color: #D9D9D9;
+  margin-bottom: 20px;
+}
+
+.formulario__input--border {
+  border-radius: 1rem;
+  border: 1px solid #284B63;
+  height: 80%;
+}
+
+.formulario__input:hover {
+  background-color: #D9D9D9;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn-primario--form {
+  width: 70%;
+}
+
+.contacto__contacto {
+  min-width: 40%;
+  margin: 0 4rem;
+  padding: 0 4rem;
+}
+
+@media (min-width: 768px) {
+  .contacto__contacto {
+    margin: 2rem 10rem;
+  }
+}
+@media (max-width: 468px) {
+  .contacto__contacto {
+    margin: auto;
+    padding-left: auto;
+  }
+}
+.no-wrap {
+  white-space: nowrap;
+}
+
+.navbar--galeria {
+  background-color: #D9D9D9;
+}
+
+.galeria_imagenes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.galeria_imagenes {
+  margin: 0 auto !important;
+}
+.galeria_imagenes div .image {
+  padding: 0;
+  display: inline-block;
+  height: auto;
+  width: 15rem;
+  overflow: hidden;
+  border: 15px solid #fff;
+  margin: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  transform: scale(1);
+  transition: transform 0.4s ease-in-out;
+}
+.galeria_imagenes div .image img {
+  height: 100%;
+  width: 100%;
+}
+.galeria_imagenes div .image:hover {
+  transform: scale(1.08);
+  transition: transform 0.4s ease-in-out;
+}
+
+.active_filter {
+  font-weight: bolder !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=estilo.css.map */
